@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+              <!-- Google tag (gtag.js) --> 
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFD404P22X"></script> 
+          <script> 
+            window.dataLayer = window.dataLayer || []; 
+            function gtag(){dataLayer.push(arguments);} 
+            gtag('js', new Date()); 
+            gtag('config', 'G-FFD404P22X'); 
+          </script>
+            <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>Simulador Beneficio Tributario</title>
+    <link rel="canonical" href="../simuladorbeneficiotributario.1.html" />
+    <!-- Twitter Card-->
+    <meta name="twitter:card" value="summary"/>
+    <!-- Open Graph-->
+    <meta property="og:title" content="Simulador Beneficio Tributario"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="/simuladorbeneficiotributario"/>
+    <meta property="og:image" content="/img/social.jpg"/>
+    <meta property="og:description" content=""/>
+	  <meta name="description" content="Utiliza el Simulador de Beneficio Tributario de LarrainVial para descubrir los beneficios tributarios que podrías obtener al ahorrar en un Ahorro Previsional Voluntario (APV)">
+    <link rel="icon" href="https://cdn.larrainvial.com/favicon.ico"/>
+    <link rel="stylesheet" href="assets/css/fln.css"/>
+    <link rel="stylesheet" href="fonts/fln-icons.css"/>
+    <link rel="stylesheet" href="assets/css/estilos.css"/>
+    <script>
+      WebFontConfig = {
+          google: {
+              families: ["Open+Sans:300,400,600,700"]
+          }
+      };
+      (function () {
+          var wf = document.createElement('script');
+          wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+              '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+          wf.type = 'text/javascript';
+          wf.async = 'true';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-706364279"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'AW-706364279');
+	</script>
+	<!-- Event snippet for sapv_resultado conversion page -->
+	<script>
+		gtag('event', 'conversion', {'send_to': 'AW-706364279/A8aDCOHy1vkYEPeG6dAC'});
+	</script>
+    	<!-- Meta Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '254092712416471');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=254092712416471&ev=PageView&noscript=1" />
+	</noscript>
+	<!-- End Meta Pixel Code -->
+
+	<script>
+		function gtag_report_conversion(url) {
+			var callback = function () {
+				if (typeof(url) != 'undefined') {
+					window.location = url;
+				}
+			};
+			gtag('event', 'conversion', {
+				'send_to': 'AW-706364279/OrKRCOTy1vkYEPeG6dAC',
+				'event_callback': callback
+			});
+			return false;
+		}
+	</script>	
+  </head>
+  <body data-uf="38197.21">
+    <main>
+      <header class="header">
+        <div class="header__contenedor"><a class="header__logo" href="../index.html"><img class="header__img" src="img/logo-lv.svg"/></a></div>
+      </header>
+      <div class="simulador">
+        <div class="contenedor-fluido">
+          <div class="marco">
+            <div class="fila">
+              <div class="col xs12"><a class="simulador__volver" href="../homesimuladoresAPV.html"><span class="fln-izquierda"></span> Volver</a></div>
+              <div class="col xs12 lg8 offset-lg2">
+                <div class="simulador__pasos" id="paso1">
+                  <div class="simulador__titulos">
+                    <h1 class="simulador__titulos__title">Simula el beneficio tributario<span>que obtendrías ahorrando en APV</span></h1>
+                    <p class="simulador__titulos__desc">Además de generar un ahorro adicional para tu futura jubilación, el APV tiene beneficios tributarios que te pueden servir para potenciar tu ahorro.</p>
+                  </div>
+                  <div class="separador"></div>
+                  <div class="simulador__form">
+                    <h5 class="simulador__form__titulo">Cuéntanos acerca de ti:</h5>
+                    <form class="form" id="form_simulador">
+                      <div class="simulador__pregunta">
+                        <div class="fila align-middle-xs">
+                          <div class="col xs12 sm12 md6 lg7 text-align-center-xs text-align-right-md">
+                            <label for="renta-bruta">*Mi renta bruta mensual es de:</label>
+                          </div>
+                          <div class="col xs11 sm8 offset-sm2 md4 offset-md0 lg5 text-align-right-md">
+                            <div class="form__grupo">
+                              <input class="text tipo_numerico miles" type="text" name="renta-bruta" id="renta-bruta" placeholder="$0" /><span class="tooltip" data-tippy-placement="right" data-tippy-arrow="true" data-tippy-content="La renta bruta es tu renta antes de realizar todos los descuentos legales (impuesto, AFP, salud y seguridad social).">?</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="separador"></div>
+                      <div class="simulador__pregunta">
+                        <div class="fila align-middle-xs">
+                          <div class="col xs12 sm12 md6 lg7 text-align-center-xs text-align-right-md">
+                            <label for="ahorro-mensual">*Quiero ahorrar mensualmente en APV:</label>
+                          </div>
+                          <div class="col xs11 sm8 offset-sm2 md4 offset-md0 lg5 text-align-right-md">
+                            <div class="form__grupo">
+                              <input class="maximo-imponible text tipo_numerico miles" type="text" name="ahorro-mensual" id="ahorro-mensual" placeholder="$0" /><span class="tooltip" data-tippy-placement="right" data-tippy-arrow="true" data-tippy-content="El APV es un ahorro voluntario adicional al que realizas en tu AFP. Además de aumentar tu jubilación, ofrece incentivos tributarios.">?</span>
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="alerta alerta--aviso alerta-ahorro text-align-center-lg" id="alerta-apv" style="display:none">El beneficio tributario tiene un tope de UF 50 mensual</div>
+                            <div class="alerta alerta--aviso alerta-monto text-align-center-lg" id="alerta-monto" style="display:none">El monto mensual de APV no debe ser mayor al de la renta bruta mensual</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="separador"></div>
+                      <div class="simulador__pregunta">
+                        <div class="fila align-middle-xs">
+                          <div class="col xs12 sm12 md6 lg7 text-align-center-xs text-align-right-md">
+                            <label for="cotizaciones">*Tengo mi cuenta de cotizaciones obligatorias en:</label>
+                          </div>
+                          <div class="col xs11 sm8 offset-sm2 md4 offset-md0 lg5 text-align-right-md">
+                            <div class="form__grupo"><span class="icono fln-abajo"></span>
+                              <select name="cotizaciones" id="cotizaciones" >
+                                <option value="" hidden="hidden">Seleccionar AFP</option>
+                                <option value="afp_capital">AFP Capital</option>
+                                <option value="afp_cuprum">AFP Cuprum</option>
+                                <option value="afp_habitat">AFP Habitat</option>
+                                <option value="afp_modelo">AFP Modelo</option>
+                                <option value="afp_planvital">AFP Planvital</option>
+                                <option value="afp_provida">AFP Provida</option>
+                                <option value="afp_uno">AFP Uno</option>
+                                <option value="afp_nose_mi_afp">No sé cual es mi AFP</option>
+                              </select><span class="tooltip" data-tippy-placement="right" data-tippy-arrow="true" data-tippy-content="Corresponde a la AFP en donde tu empleador deposita mensualmente tu cotización obligatoria.">?</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="separador"></div>
+                      <div class="simulador__errores">
+                        <div class="alerta alerta--error" id="errores_form_simulador" style="display:none"></div>
+                      </div>
+                      <div class="simulador__boton">
+                                                  <p>*Debes completar los campos obligatorios</p>
+                          <div class="separador"></div>
+                          <a class="btn btn--primario btn--ancho btn--block-xs btn--inline-md fix-focus" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html#" onclick="validarPaso1(); return false;">Siguiente</a>
+                                              </div>
+                      <div class="separador"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col xs12 lg12">
+                <div class="simulador__pasos simulador__pasos--dos" id="paso2" style="display:none">
+                  <div class="fila">
+                    
+                    <div class="separador"></div>
+                    <div class="col xs12 lg10 offset-lg1">
+                      <div class="separador"></div>
+                      <div class="simulador__container">
+                        <div class="simulador__top">
+                          <div class="simulador__top__box">
+                            <div class="simulador__grafico"><img class="js-imagen-regimen" src="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html" alt="Balanza regimen"/></div>
+                            <div class="simulador__textos js-textos-regimen"></div>
+                          </div>
+                          <div class="separador"></div>
+                          <div class="simulador__desplegable tabla-desplegable" style="display:none">
+                            <p>El detalle de la recomendación es el siguiente</p>
+                            <div class="js-tabla-regimen"></div>
+                          </div>
+                          <div class="simulador__vermas"><a href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html#"><span class="fln-icon fln-abajo-light"></span> <span class="btn-txt">Ver más</span></a></div>
+                        </div>
+                        <div class="simulador__bottom">
+                          <div class="simulador__bottom__box recalcular">
+                            <div class="recalcular__calcular">
+                              <p>¿Cómo varía el beneficio tributario si aumento mi APV?</p>
+                              <div class="recalcular__box">
+                                <div class="alerta alerta--aviso" id="alerta-recalcular" style="display:none;">Debes ingresar un valor mayor a cero para recalcular tu beneficio tributario.</div>
+                                <div class="alerta alerta--aviso alerta-ahorro" style="display:none;">El beneficio tributario tiene un tope de UF 50 mensual</div>
+                                <div class="form__grupo form__grupo--recalcular">
+                                  <input class="text tipo_numerico miles maximo-imponible" type="text" name="recalcular" id="recalcular" placeholder="$0"/><a class="btn btn--ancho btn--big btn--borde btn--primario" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html#" onclick="recalcular(); return false;" id="btn-recalcular">Recalcular</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="recalcular__contactar">
+                              <div class="recalcular__btns">
+                                <a class="btn btn--primario btn--block-xs btn-inline-lg abrir-form-asesoria fix-focus" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html#">Solicita nuestra asesoría</a>
+                                <a class="btn btn--primario btn--borde btn--block-xs btn--inline-md hc" href="https://haztecliente.larrainvial.com/" target="_blank" onclick="tagHazteCliente();">Hazte Cliente</a>
+                              </div>
+                              <div class="separador--small"></div><a class="btn btn--link btn--icono abrir-form-email" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html#">Enviar simulación por email <span class="fln-mail"></span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="separador--big"></div>
+                      <div class="supuestos">
+                        <div class="supuestos__contenedor">
+                          <h5 class="supuestos__titulo">Conoce los supuestos de esta estimación <span class="fln-abajo"></span></h5>
+                        </div>
+                                                <div class="supuestos__contenido" style="display:none">
+                          <ul class="supuestos__lista">
+                            <li>Esta simulación fue realizada el 26/11/2024.</li>
+                            <li>Este documento solo es una simulación preparada en base a los supuestos mencionados a continuación y a la información proporcionada por el cliente. Por lo anterior, en ningún caso garantiza o asegura la obtención de un determinado beneficio tributario.</li>
+                            <li>Se asume un trabajador dependiente.</li>
+                            <li>Para todo cálculo, se asumen un año de 12 meses.</li>
+                            <li>Tope imponible UF 84,3.</li>
+                            <li>Para el cálculo de la comisión de cada AFP, se tomaron los siguientes valores:</li>
+                          </ul>
+                          <div class="separador"></div>
+                          <div class="supuestos__tabla tabla tabla--borde">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>AFP</th>
+                                  <th style="width:40%; text-align: right;">Comisión</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Capital</td>
+                                  <td>1,44%</td>
+                                </tr>
+                                <tr>
+                                  <td>Cumprum</td>
+                                  <td>1,44%</td>
+                                </tr>
+                                <tr>
+                                  <td>Habitat</td>
+                                  <td>1,27%</td>
+                                </tr>
+                                <tr>
+                                  <td>Modelo</td>
+                                  <td>0,58%</td>
+                                </tr>
+                                <tr>
+                                  <td>Planvital</td>
+                                  <td>1,16%</td>
+                                </tr>
+                                <tr>
+                                  <td>Provida</td>
+                                  <td>1,45%</td>
+                                </tr>
+                                <tr>
+                                  <td>Uno</td>
+                                  <td>0,69%</td>
+                                </tr>
+                                <tr>
+                                  <td>No sé cuál es mi AFP (promedio industria)</td>
+                                  <td>1,15%</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <ul class="supuestos__lista">
+                            <li>El ahorro optimo mensual recomendado esta aproximado de acuerdo al cálculo del ahorro para obtener el 15% de bonificación fiscal anual.</li>
+                            <li>La recomendación entregada se basa en el valor mayor obtenido del beneficio tributario. En el caso del APV Mixto se considera la suma de ambos beneficios.</li>
+                          </ul>
+                        </div>
+                        <div class="separador"></div>
+                        <div class="supuestos__volver">
+                          <a class="btn btn--primario btn--borde btn--block-xs btn--inline-md volver" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html" onclick="location.reload();">Volver al inicio</a>
+                        </div>
+                      </div>
+                      <div class="separador"></div>
+                      <div class="form-contactos form-contactos--mail" style="display:none">
+                        <div class="respuesta respuesta-mail">
+                          <div class="respuesta__item respuesta-mail__item--exito text-align-center-xs" style="display:none"><span class="fln-alerta-exito-light"></span>
+                            <h3 class="respuesta-mail__titulo">Se ha enviado el mail</h3>
+                            <p class="respuesta-mail__parrafo">Hemos enviado el resultado de la simulación a tu mail.</p>
+                            <div class="separador"></div>
+                            <div class="btn__grupo">
+                              <a class="btn reenviar-mail" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html" onclick="location.reload();">Volver a enviar</a>
+                              <a class="btn btn--secundario" href="../index.html">Ir al inicio</a>
+                            </div>
+                          </div>
+                          <div class="respuesta__item respuesta-mail__item--error text-align-center-xs" style="display:none"><span class="fln-alerta-error-light"></span>
+                            <h3 class="respuesta-mail__titulo">No se pudo enviar el mail</h3>
+                            <p class="respuesta-mail__parrafo">Ha ocurrido un error inesperado, por favor inténtalo nuevamente.</p>
+                            <div class="separador"></div>
+                            <div class="btn__grupo">
+                              <a class="btn reenviar-mail" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html" onclick="location.reload();">Reintentar</a>
+                              <a class="btn btn--secundario" href="../index.html">Ir al inicio</a>
+                            </div>
+                          </div>
+                        </div>
+                        <form class="form" id="form-mail">
+                          <h3 class="form-contactos__titulo">Enviar resultado de simulación por email.</h3>
+                          <div class="separador"></div>
+                          <div class="fila">
+                            <div class="col xs12 lg6">
+                              <div class="form__grupo" data-animacion="placeholder">
+                                <input class="text requerido tipo_nombre" type="text" name="nombre-apellido" id="nombre-apellido"/>
+                                <label for="nombre-apellido">Nombre y apellido</label>
+                              </div>
+                            </div>
+                            <div class="col xs12 lg6">
+                              <div class="form__grupo" data-animacion="placeholder">
+                                <input class="text requerido tipo_email" type="text" name="email" id="email"/>
+                                <label for="email">Email</label>
+                              </div>
+                            </div>
+							<div class="col-xs-12 col-lg-4">
+								<div class="g-recaptcha captcha" id="captcha" data-callback="recaptchaCallback" data-sitekey="6LdDdmceAAAAAParljYtgFJTzsAX3pd9LcwUbbil">
+								</div>
+							</div>
+                            <div class="col-xs-12 col-lg-8 xs-text-right">
+                              <div class="alerta alerta--error" id="errores_form-mail" style="display:none"></div>
+							  <p class="small" style="text-align: right;">*Todos los campos son obligatorios</p>
+							  <div class="separador--small"></div>
+							  <div class="btn__grupo xs-text-right form-contactos__enviar" style="justify-content: flex-end;">
+								  <a class="btn btn--primario fix-focus" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html#" onclick="enviarMail(); return false;">Enviar</a>
+							  </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="form-contactos form-contactos--mensaje" style="display:none">
+                        <div class="respuesta respuesta-asesoria">
+                          <div class="respuesta__item respuesta-asesoria__item--exito text-align-center-xs" style="display:none"><span class="fln-alerta-exito-light"></span>
+                            <h3 class="respuesta__titulo">Datos enviados con éxito</h3>
+                            <p class="respuesta__parrafo">En breve un asesor se pondrá en contacto contigo.</p>
+                            <div class="separador"></div>
+                            <div class="btn__grupo">
+                              <a class="btn reenviar-mensaje" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html" onclick="location.reload();">Volver a enviar</a>
+                              <a class="btn btn--secundario" href="../index.html">Ir al inicio</a>
+                            </div>
+                          </div>
+                          <div class="respuesta__item respuesta-asesoria__item--error text-align-center-xs" style="display:none"><span class="fln-alerta-error-light"></span>
+                            <h3 class="respuesta__titulo">No se pudieron enviar tus datos</h3>
+                            <p class="respuesta__parrafo">Ha ocurrido un error inesperado, por favor inténtalo nuevamente.</p>
+                            <div class="separador"></div>
+                            <div class="btn__grupo">
+                              <a class="btn btn--secundario reenviar-mensaje" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html" onclick="location.reload();">Reintentar</a>
+                            </div>
+                          </div>
+                        </div>
+                        <form class="form" id="form-mensaje">
+                          <h3 class="form-contactos__titulo">Contactar a un asesor</h3>
+                          <div class="separador"></div>
+                          <div class="fila">
+                            <div class="col xs12 lg6">
+                              <div class="form__grupo" data-animacion="placeholder">
+                                <input class="text requerido tipo_nombre" type="text" name="nombre-completo" id="nombre-completo"/>
+                                <label for="nombre-completo">Nombre completo</label>
+                              </div>
+                              <div class="form__grupo" data-animacion="placeholder">
+                                <input class="text requerido tipo_rut" type="text" name="rut" id="rut"/>
+                                <label for="rut">RUT</label>
+                              </div>
+                              <div class="form__grupo" data-animacion="placeholder">
+                                <input class="text requerido tipo_telefono" type="text" name="telefono" id="telefono" maxlength="14"/>
+                                <label for="telefono">Teléfono</label>
+                              </div>
+                              <div class="form__grupo" data-animacion="placeholder">
+                                <input class="text requerido tipo_email" type="text" name="email-contacto" id="email-contacto" maxlength="14"/>
+                                <label for="email-contacto">Email</label>
+                              </div>
+                            </div>
+                            <div class="col xs12 lg6">
+                              <!-- <div class="form__grupo form__grupo--select" data-animacion="placeholder"><span class="icono fln-abajo"></span>
+                                <select name="estimacion-de-jubilacion" id="estimacion-de-jubilacion">
+                                  <option value="" hidden="hidden"></option>
+                                  <option value="estimacion-de-jubilacion">Estimación de jubilación</option>
+                                </select>
+                                <label for="select-simple-disabled-0">Seleccionar</label>
+                              </div> -->
+                              <div class="form__grupo" data-animacion="placeholder">
+                                <textarea id="mensaje" name="mensaje" cols="30" rows="10" maxlength="1000"></textarea>
+                                <label for="mensaje">Mensaje</label>
+                              </div>
+                              <div class="form__grupo captcha">
+                                <div class="form-contactos__captcha">
+                                  								  <div class="g-recaptcha captcha" id="captcha2" data-callback="recaptchaCallback" data-sitekey="6LdDdmceAAAAAParljYtgFJTzsAX3pd9LcwUbbil">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col xs12 lg12">
+                              <div class="alerta alerta--error" id="errores_form-mensaje" style="display:none"></div>
+                              <div class="row">
+                                <div class="col xs12">
+                                  <div class="separador"></div>
+                                  <div class="btn__grupo xs-text-right form-contactos__enviar">
+                                    <p class="small">*Todos los campos son obligatorios</p><a class="btn btn--primario fix-focus" href="index.html@utm_source=Experiencia-LarrainVial-APV&amp;utm_medium=Boton&amp;utm_campaign=Beneficiotributario.html#" onclick="solicitarAsesoria(); return false;">Enviar</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="preloader-general" id="preloader-general" data-tipo="screen" style="display:none"></div>
+	<script>
+		var _captcha = document.getElementById('captcha');
+		var _captcha2 = document.getElementById('captcha2');
+		var onloadCallback = function() {
+			if (_captcha) {
+				grecaptcha.render(_captcha, {
+				'sitekey': '6LdDdmceAAAAAParljYtgFJTzsAX3pd9LcwUbbil',
+				'callback': recaptchaCallback,
+				})
+			}
+			if (_captcha2) {
+				grecaptcha.render(_captcha2, {
+				'sitekey': '6LdDdmceAAAAAParljYtgFJTzsAX3pd9LcwUbbil',
+				'callback': recaptchaCallback,
+				})
+			}
+		}
+	</script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/jquery-migrate-3.4.0.js"></script>
+	<script src="assets/js/jquery-ui.js"></script> 
+    <script src="assets/js/automatizar.js"></script>
+    <script src="assets/js/lozad.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/tippy.min.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/fln.js"></script>
+    <script src="assets/js/funciones.js"></script> -->
+    <script src="minjs/funciones.min.js"></script>
+  </body>
+</html>

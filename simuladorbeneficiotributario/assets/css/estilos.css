@@ -1,0 +1,859 @@
+@charset "UTF-8";
+/*!
+* ¡ATENCIÓN! Hoja de estilos generada con SASS, no modificar.
+*/
+/* line 4, gulp-files/scss/estilos/base/general.scss */
+:root {
+  --marco: 1280px;
+}
+
+/* line 9, gulp-files/scss/estilos/base/general.scss */
+body {
+  padding-top: 100px;
+}
+
+@media (max-width: 991px) {
+  /* line 9, gulp-files/scss/estilos/base/general.scss */
+  body {
+    padding-top: 95px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 9, gulp-files/scss/estilos/base/general.scss */
+  body {
+    padding-top: 60px;
+  }
+}
+
+/* line 23, gulp-files/scss/estilos/base/general.scss */
+.marco {
+  max-width: 1280px;
+  margin: auto;
+}
+
+@supports (--css: variables) {
+  /* line 23, gulp-files/scss/estilos/base/general.scss */
+  .marco {
+    max-width: var(--marco);
+  }
+}
+
+/* line 1, gulp-files/scss/estilos/estructura/header.scss */
+.header {
+  height: 95px;
+  position: fixed;
+  width: 100%;
+  background: white;
+  box-shadow: 0 3px 0 rgba(102, 102, 102, 0.2);
+  z-index: 99;
+  top: 0;
+}
+
+@media (max-width: 991px) {
+  /* line 1, gulp-files/scss/estilos/estructura/header.scss */
+  .header {
+    height: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 1, gulp-files/scss/estilos/estructura/header.scss */
+  .header {
+    height: 60px;
+  }
+}
+
+/* line 15, gulp-files/scss/estilos/estructura/header.scss */
+.header__contenedor {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+  padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+  /* line 15, gulp-files/scss/estilos/estructura/header.scss */
+  .header__contenedor {
+    padding-left: 15px;
+  }
+}
+
+/* line 25, gulp-files/scss/estilos/estructura/header.scss */
+.header__logo {
+  display: -webkit-box;
+  display: flex;
+}
+
+/* line 28, gulp-files/scss/estilos/estructura/header.scss */
+.header__img {
+  width: 176px;
+}
+
+@media (max-width: 767px) {
+  /* line 28, gulp-files/scss/estilos/estructura/header.scss */
+  .header__img {
+    width: 146px;
+  }
+}
+
+/* line 2, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador p {
+  font-weight: 300;
+  color: #333d47;
+}
+
+/* line 6, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__pregunta {
+  max-width: 650px;
+  margin: auto;
+}
+
+/* line 10, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__volver {
+  text-decoration: none;
+  font-size: 2em;
+  margin-top: 20px;
+  display: inline-block;
+  font-weight: 400;
+  position: relative;
+  color: #4088A2;
+}
+
+@media (max-width: 991px) {
+  /* line 10, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__volver {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 543px) {
+  /* line 10, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__volver {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 543px) {
+  /* line 10, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__volver {
+    margin: 15px 0 0;
+  }
+}
+
+/* line 28, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__titulos {
+  text-align: center;
+}
+
+/* line 30, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__titulos h1 {
+  font-size: 3em;
+  color: #F93549;
+  font-weight: 600;
+}
+
+/* line 35, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__titulos span {
+  display: block;
+}
+
+/* line 40, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__form__titulo {
+  font-family: 'Open Sans', serif;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 1.8em;
+  font-weight: 400;
+  color: #333d47;
+}
+
+/* line 50, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__pregunta label {
+  color: #333d47;
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+/* line 56, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__boton {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* line 59, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__boton p {
+  font-weight: 300;
+  color: #999;
+}
+
+/* line 65, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__pasos--dos {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  /* line 65, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__pasos--dos {
+    margin-bottom: 60px;
+  }
+}
+
+/* line 72, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__container {
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+/* line 78, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__top {
+  min-height: 230px;
+  background: #FBFBFB;
+  padding: 35px 60px;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  /* line 78, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__top {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 78, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__top {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 543px) {
+  /* line 78, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__top {
+    padding: 15px;
+  }
+}
+
+/* line 92, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__top__box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 767px) {
+  /* line 92, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__top__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
+/* line 101, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__grafico {
+  margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+  /* line 101, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__grafico {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 106, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__grafico img {
+  width: 160px;
+}
+
+@media (max-width: 767px) {
+  /* line 110, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__textos {
+    text-align: center;
+  }
+}
+
+/* line 115, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__vermas {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -60px;
+  left: 0;
+}
+
+@media (max-width: 543px) {
+  /* line 115, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__vermas {
+    bottom: -50px;
+  }
+}
+
+/* line 124, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__vermas a {
+  font-size: 1.8em;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  text-decoration: none;
+  font-weight: 100;
+  color: #333d47;
+}
+
+/* line 135, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__vermas span.fln-icon {
+  font-size: 2.5em;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-bottom: 3px;
+  box-shadow: 0px 1px 5px 0px rgba(159, 159, 159, 0.7);
+}
+
+@media (max-width: 767px) {
+  /* line 135, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__vermas span.fln-icon {
+    font-size: 2.2em;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* line 154, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__bottom {
+  min-height: 370px;
+  padding: 125px 30px 30px;
+}
+
+@media (max-width: 991px) {
+  /* line 154, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__bottom {
+    padding: 125px 20px 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 154, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__bottom {
+    padding: 125px 35px 35px;
+  }
+}
+
+@media (max-width: 543px) {
+  /* line 154, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador__bottom {
+    padding: 125px 15px 35px;
+  }
+}
+
+/* line 167, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador__destacado {
+  color: #006184;
+  font-weight: 600;
+}
+
+/* line 171, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .recalcular {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  /* line 171, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador .recalcular {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
+/* line 177, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .recalcular__calcular, .simulador .recalcular__contactar {
+  -webkit-box-flex: 1;
+          flex: 1;
+  padding: 0 30px;
+}
+
+@media (max-width: 991px) {
+  /* line 177, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador .recalcular__calcular, .simulador .recalcular__contactar {
+    -webkit-box-flex: 1;
+            flex: auto;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 177, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador .recalcular__calcular, .simulador .recalcular__contactar {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 189, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador .recalcular__calcular {
+    margin-bottom: 60px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 195, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .recalcular__calcular p {
+  color: #006184;
+  margin-bottom: 30px;
+}
+
+/* line 199, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .recalcular__calcular input {
+  margin-right: 30px;
+  max-width: 200px;
+}
+
+@media (max-width: 1210px) {
+  .simulador .recalcular__calcular input {
+    margin-right: 0;
+    margin-bottom: 15px;
+    max-width: initial;
+  }
+}
+
+@media (max-width: 543px) {
+  /* line 199, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador .recalcular__calcular input {
+    margin-right: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 209, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .recalcular__contactar {
+  max-width: 480px;
+  margin: auto;
+  text-align: center;
+}
+
+.recalcular__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.abrir-form-asesoria {
+  width: 53%;
+}
+
+.hc {
+  width: 45%;
+}
+
+@media (max-width:1210px) {
+  .recalcular__btns {
+    flex-direction: column;
+  }
+  .abrir-form-asesoria {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .hc {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* line 213, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .recalcular__contactar .abrir-form-email {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+}
+
+/* line 218, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .recalcular__contactar .abrir-form-email span {
+  line-height: 1;
+  font-size: 1.6em;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  top: 1px;
+}
+
+@media (max-width:543px) {
+  .simulador .recalcular__contactar {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* line 229, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .recalcular__box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+          flex-direction: column-reverse;
+  width: 100%;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  /* line 229, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador .recalcular__box {
+    -webkit-box-align: center;
+            align-items: center;
+  }
+}
+
+/* line 239, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .tabla-desplegable {
+  padding: 0 50px;
+}
+
+@media (max-width: 767px) {
+  /* line 239, gulp-files/scss/estilos/estructura/simulador.scss */
+  .simulador .tabla-desplegable {
+    padding: 0;
+  }
+}
+
+/* line 244, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .tabla-desplegable table {
+  border-collapse: separate;
+}
+
+/* line 247, gulp-files/scss/estilos/estructura/simulador.scss */
+.simulador .tabla-desplegable p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* line 255, gulp-files/scss/estilos/estructura/simulador.scss */
+.supuestos__contenedor {
+  text-align: center;
+}
+
+/* line 258, gulp-files/scss/estilos/estructura/simulador.scss */
+.supuestos__titulo {
+  font-size: 1.6em;
+  font-weight: 300;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+/* line 263, gulp-files/scss/estilos/estructura/simulador.scss */
+.supuestos__titulo span {
+  margin-left: 10px;
+}
+
+/* line 267, gulp-files/scss/estilos/estructura/simulador.scss */
+.supuestos__contenido {
+  padding: 50px 45px;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 543px) {
+  /* line 267, gulp-files/scss/estilos/estructura/simulador.scss */
+  .supuestos__contenido {
+    padding: 50px 20px;
+  }
+}
+
+/* line 277, gulp-files/scss/estilos/estructura/simulador.scss */
+.supuestos__lista li {
+  font-size: 1.6em;
+  color: #333d47;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  position: relative;
+}
+
+/* line 284, gulp-files/scss/estilos/estructura/simulador.scss */
+.supuestos__lista li:before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background: #F93549;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+/* line 295, gulp-files/scss/estilos/estructura/simulador.scss */
+.supuestos__volver {
+  text-align: center;
+}
+
+/* line 298, gulp-files/scss/estilos/estructura/simulador.scss */
+.supuestos table {
+  border-collapse: separate;
+}
+
+@media (max-width: 767px) {
+  /* line 298, gulp-files/scss/estilos/estructura/simulador.scss */
+  .supuestos table {
+    width: 100%;
+  }
+}
+
+/* line 308, gulp-files/scss/estilos/estructura/simulador.scss */
+.tabla thead th {
+  background: #ADB1B5;
+  border: 1px solid #ADB1B5;
+  color: white;
+}
+
+/* line 317, gulp-files/scss/estilos/estructura/simulador.scss */
+.tabla tbody tr.tabla-separador td {
+  background: #adb1b5;
+  border-color: #adb1b5;
+  padding: 5px;
+}
+
+@media (max-width: 767px) {
+  /* line 316, gulp-files/scss/estilos/estructura/simulador.scss */
+  .tabla tbody tr.tabla-separador {
+    display: none;
+  }
+}
+
+/* line 327, gulp-files/scss/estilos/estructura/simulador.scss */
+.tabla tbody td {
+  font-weight: 300;
+}
+
+/* line 2, gulp-files/scss/estilos/componentes/forms.scss */
+.form__grupo {
+  margin-bottom: 0;
+  position: relative;
+}
+
+/* line 5, gulp-files/scss/estilos/componentes/forms.scss */
+.form__grupo--recalcular {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+@media (max-width:1210px) {
+  .form__grupo--recalcular {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .form__grupo--recalcular {
+    max-width: 210px;
+  }
+}
+
+@media (max-width: 543px) {
+  /* line 5, gulp-files/scss/estilos/componentes/forms.scss */
+  .form__grupo--recalcular {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* line 12, gulp-files/scss/estilos/componentes/forms.scss */
+.form__grupo--recalcular #btn-recalcular:focus {
+  border-color: #F93549;
+}
+
+/* line 17, gulp-files/scss/estilos/componentes/forms.scss */
+.form__grupo input,
+.form__grupo select,
+.form__grupo textarea {
+  border-radius: 10px;
+}
+
+/* line 25, gulp-files/scss/estilos/componentes/forms.scss */
+.form-contactos {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media (max-width: 543px) {
+  /* line 25, gulp-files/scss/estilos/componentes/forms.scss */
+  .form-contactos {
+    padding: 30px 0;
+  }
+}
+
+/* line 32, gulp-files/scss/estilos/componentes/forms.scss */
+.form-contactos__titulo {
+  font-weight: 300;
+  text-align: center;
+  font-size: 2.1em;
+  color: #333d47;
+}
+
+/* line 38, gulp-files/scss/estilos/componentes/forms.scss */
+.form-contactos__enviar {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 43, gulp-files/scss/estilos/componentes/forms.scss */
+.form-contactos--select {
+  margin-top: 1.5rem;
+}
+
+/* line 46, gulp-files/scss/estilos/componentes/forms.scss */
+.form-contactos textarea {
+  max-height: 195px;
+}
+
+/* line 49, gulp-files/scss/estilos/componentes/forms.scss */
+.form-contactos select {
+  color: #999;
+}
+
+/* line 52, gulp-files/scss/estilos/componentes/forms.scss */
+.form-contactos__captcha {
+  position: relative;
+  margin-bottom: 15px;
+  z-index: 0;
+}
+
+/* line 56, gulp-files/scss/estilos/componentes/forms.scss */
+.form-contactos__captcha .g-recaptcha.invalido > div {
+  border: 1px solid #F93549;
+}
+
+/* line 63, gulp-files/scss/estilos/componentes/forms.scss */
+.btn__grupo .btn {
+  margin-bottom: 0;
+}
+
+/* line 66, gulp-files/scss/estilos/componentes/forms.scss */
+.btn__grupo .small {
+  margin-bottom: 0;
+  color: #999999;
+}
+
+/* line 73, gulp-files/scss/estilos/componentes/forms.scss */
+.respuesta__item {
+  padding: 40px;
+}
+
+/* line 75, gulp-files/scss/estilos/componentes/forms.scss */
+.respuesta__item span {
+  font-size: 6em;
+  display: inline-block;
+}
+
+/* line 85, gulp-files/scss/estilos/componentes/forms.scss */
+.respuesta-mail__item--exito,
+.respuesta-asesoria__item--exito {
+  color: #71C341;
+}
+
+/* line 88, gulp-files/scss/estilos/componentes/forms.scss */
+.respuesta-mail__item--error,
+.respuesta-asesoria__item--error {
+  color: #F93549;
+}
+
+/* line 94, gulp-files/scss/estilos/componentes/forms.scss */
+#alerta-recalcular {
+  max-width: 410px;
+}
+
+@media (max-width: 543px) {
+  /* line 94, gulp-files/scss/estilos/componentes/forms.scss */
+  #alerta-recalcular {
+    max-width: 100%;
+  }
+}
+
+/* line 102, gulp-files/scss/estilos/componentes/forms.scss */
+.fix-focus:focus {
+  background: #F93549;
+  border-color: #F93549;
+  box-shadow: 0 0 2px rgba(204, 0, 51, 0.1);
+}
+
+/* line 1, gulp-files/scss/estilos/componentes/tooltip.scss */
+.tooltip {
+  position: absolute;
+  top: 7px;
+  right: -40px;
+  background: #4F81BD;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  font-size: 2em;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: flex;
+  cursor: help;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  outline: 0;
+}
+
+/* line 18, gulp-files/scss/estilos/componentes/tooltip.scss */
+.tippy-tooltip {
+  background-color: #333333;
+  border-radius: 7px;
+  color: white;
+  font-size: 1.4em;
+  padding: 10px;
+}
+
+/* @media (max-width: 54.3rem) {
+ .btn.volver {
+    padding: 12px 2rem;
+  }
+} */
+
+.abrir-form-email {
+  color: #6F6F71;
+  font-weight: 600;
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Simulador de Ahorro Previsional Voluntario</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="referrer" content="no-referrer" />
+	<meta name="description" content="Utiliza el Simulador de Ahorro Previsional Voluntario (APV) de LarrainVial para simular el monto de tu jubilación. Planifica mejor y toma decisiones informado"> 
+	<link rel="canonical" href="../simuladorapv.1.html" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link rel="icon" href="https://cdn.larrainvial.com/favicon.ico">
+	<link rel="stylesheet" href="css/fln-icons.css">
+	<link rel="stylesheet" href="css/fln.css">
+	<link rel="stylesheet" href="css/estilos.css">
+		<script>
+		var edades = {
+			hombre: {
+				joven: {
+					min: 18,
+					max: 30				},
+				adulto: {
+					min: 31,
+					max: 50				},
+				adultoMayor: {
+					min: 51,
+					max: 65				}
+			},
+			mujer: {
+				joven: {
+					min: 18,
+					max: 30				},
+				adulto: {
+					min: 31,
+					max: 50				},
+				adultoMayor: {
+					min: 51,
+					max: 60				}
+			}
+		}
+		var valorUF = 38197.21;
+		var valorUTM = 399768;
+	</script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<!-- <script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-3.4.0.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="js/automatizar.min.js"></script>
+	<script type="text/javascript" src="js/fln.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/tippy.min.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/drilldown.js"></script>
+	<script type="text/javascript" src="js/exporting.js"></script>
+	<script type="text/javascript" src="js/export-data.js"></script>
+	<script type="text/javascript" src="js/accessibility.js"></script>
+	<script type="text/javascript" src="js/funciones.js"></script> -->
+	<script type="text/javascript" src="minjs/funciones.min.js"></script>
+
+	<!-- Google tag (gtag.js) --> 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFD404P22X"></script> 
+	<script> 
+		window.dataLayer = window.dataLayer || []; 
+		function gtag(){dataLayer.push(arguments);} 
+		gtag('js', new Date()); 
+		gtag('config', 'G-FFD404P22X'); 
+	</script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=AW-706364279"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'AW-706364279');
+	</script>
+
+	<script>
+		function snippet(){
+			gtag('event', 'conversion', {'send_to': 'AW-706364279/A8aDCOHy1vkYEPeG6dAC'});
+		}
+	</script>
+
+	<script>
+		function gtag_report_conversion(url) {
+			var callback = function () {
+				if (typeof(url) != 'undefined') {
+					window.location = url;
+				}
+			};
+			gtag('event', 'conversion', {
+				'send_to': 'AW-706364279/OrKRCOTy1vkYEPeG6dAC',
+				'event_callback': callback
+			});
+			return false;
+		}
+	</script>
+
+	<!-- Meta Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '254092712416471');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=254092712416471&ev=PageView&noscript=1"/>
+	</noscript>
+	<!-- End Meta Pixel Code -->
+	</head>
+
+<body ontouchstart>
+	<main>
+		<header class="header">
+			<div class="header__item header__item--logo">
+				<a href="https://www.larrainvial.com/" aria-label="Ir al LarrainVial.com" onclick="gtag('event', 'Home', {'event_category':'Cabecera','event_label': 'Logo'});">
+					<img class="header__logo" src="https://cdn.larrainvial.com/img/larrainvial/logo_larrainvial_color.svg" alt="LarrainVial">
+				</a>
+			</div>
+		</header>
+		<div class="separador"></div>
+		<section class="simulador xs-text-center">
+			<div class="contenedor-fluido">
+				<div class="row">
+					<div class="col xs12 xs-text-left">
+						<a href="../homesimuladoresAPV.html" class="simulador__volver">
+							<span class="fln-izquierda"></span> Volver
+						</a>
+					</div>
+					<div class="col-xs-12">
+						<div class="titulo-simulador">
+							<h1 class="simulador__titulo" data-fraccion="3"><span>Simula el monto de tu jubilación con APV</span></h1>
+							<p>El APV es un ahorro adicional al que realizas mensualmente en tu AFP, con el objetivo de mantener un nivel de ingresos similar al actual en el momento de jubilarte.</p>
+						</div>
+						<!-- <div class="separador"></div> -->
+						<!-- <h4 class="simulador__subtitulo" id="js-subtitulo">Te invitamos a conocer tu jubilación estimada al invertir en APV.</h4> -->
+						<div class="pasos" id="pasos">
+							<div class="separador"></div>
+							<div class="pasos__nav">
+								<div class="pasos__etapas">
+									<div class="pasos__barra"></div>
+									<span class="pasos__etapa pasos__etapa--activo">
+										<span class="pasos__paso">Paso 1</span>
+										<span class="pasos__punto">
+											<span class="pasos__ico fln-check-light"></span>
+										</span>
+										<!-- <span class="pasos__nombre">Sexo</span> -->
+									</span>
+									<span class="pasos__etapa pasos__etapa--disabled">
+										<span class="pasos__paso">Paso 2</span>
+										<span class="pasos__punto">
+											<span class="pasos__ico fln-check-light"></span>
+										</span>
+										<!-- <span class="pasos__nombre">Edad</span> -->
+									</span>
+									<span class="pasos__etapa pasos__etapa--disabled">
+										<span class="pasos__paso">Paso 3</span>
+										<span class="pasos__punto">
+											<span class="pasos__ico fln-check-light"></span>
+										</span>
+										<!-- <span class="pasos__nombre">Ahorro y renta</span> -->
+									</span>
+									<span class="pasos__etapa pasos__etapa--disabled">
+										<span class="pasos__paso">Paso 4</span>
+										<span class="pasos__punto">
+											<span class="pasos__ico fln-check-light"></span>
+										</span>
+										<!-- <span class="pasos__nombre">Ahorro y renta</span> -->
+									</span>
+									<!-- <span class="pasos__etapa pasos__etapa--disabled">
+										<span class="pasos__paso">Paso 3</span>
+										<span class="pasos__punto">
+											<span class="pasos__ico fln-check-light"></span>
+										</span>
+										<span class="pasos__nombre">Ahorro y renta</span>
+									</span> -->
+								</div>
+							</div>
+							<div class="separador--big"></div>
+							<div class="pasos__contenedor">
+								<h4 class="pasos__titulo">¿Eres hombre o mujer?</h4>
+								<div class="sexo" id="sexo">
+									<div class="sexo__item sexo__item--hombre figura-home">
+										<label for="hombre" onclick="gtag('event', 'Simulador', {'event_category':'Sexo','event_label': 'Hombre'});">
+											<img class="personaje" src="img/adulto-m.png" alt="Hombre">
+										</label>
+										<input class="sexo-radio" type="radio" name="sexo" id="hombre" data-sexo="hombre" hidden>
+									</div>
+									<div class="sexo__item sexo__item--mujer">
+										<label for="mujer" onclick="gtag('event', 'Simulador', {'event_category':'Sexo','event_label': 'Mujer'});">
+											<img class="personaje" src="img/adulto-f.png" alt="Mujer">
+										</label>
+										<input class="sexo-radio" type="radio" name="sexo" id="mujer" data-sexo="mujer" hidden>
+									</div>
+								</div>
+								<div class="separador--big"></div>
+								<div class="btn__grupo" style="display:none">
+									<button class="btn btn--primario btn--block-xs btn--inline-md btn--ancho" onclick="pasos.activar(1); gtag('event', 'Simulador', {'event_category':'Paso-uno','event_label': 'Siguiente'});" disabled>Siguiente</button>
+								</div>
+							</div>
+							<div class="pasos__contenedor" style="display:none">
+								<h4 class="pasos__titulo">¿Cuál es tu edad?</h4>
+								<div class="edad" id="edad-mujer" style="display:none">
+									<div class="edad__contenedor">
+										<div class="edad__item edad__item--edad-mujer" id="edad-mujer1">
+											<img class="personaje" src="img/joven-f.png" alt="Joven">
+										</div>
+										<div class="edad__item edad__item--edad-mujer" id="edad-mujer2" style="display:none">
+											<img class="personaje" src="img/adulto-f.png" alt="Adulto">
+										</div>
+										<div class="edad__item edad__item--edad-mujer" id="edad-mujer3" style="display:none">
+											<img class="personaje" src="img/adulto-mayor-f.png" alt="Adulto mayor">
+										</div>
+									</div>
+									<div class="slider slider--edad-mujer slider--primario">
+										<div class="slider__item"></div>
+										<input type="text" class="valor-slider required">
+										<!-- <span class="rango-slider">18</span> -->
+									</div>
+								</div>
+								<div class="edad" id="edad-hombre" style="display:none">
+									<div class="edad__contenedor">
+										<div class="edad__item edad__item--edad-hombre" id="edad-hombre1">
+											<img class="personaje" src="img/joven-m.png" alt="Joven">
+										</div>
+										<div class="edad__item edad__item--edad-hombre" id="edad-hombre2" style="display:none">
+											<img class="personaje" src="img/adulto-m.png" alt="Adulto">
+										</div>
+										<div class="edad__item edad__item--edad-hombre" id="edad-hombre3" style="display:none">
+											<img class="personaje" src="img/adulto-mayor-m.png" alt="Adulto mayor">
+										</div>
+									</div>
+									<div class="slider slider--edad-hombre slider--primario" data-max="65" data-min="18" data-inicial="18">
+										<div class="slider__item"></div>
+										<input type="text" class="valor-slider required">
+										<!-- <span class="rango-slider">18</span> -->
+									</div>
+								</div>
+								<div class="separador--big"></div>
+
+								<div class="btn__grupo flex-xs block-md column-reverse-xs row-md">
+									<a href="../simuladorapv.1.html#" class="btn btn--secundario btn--ancho btn--borde btn--block-xs btn--inline-md" onclick="pasos.activar(0); gtag('event', 'Simulador', {'event_category':'Edad','event_label': 'Volver'}); return false;">Volver</a>
+									<button class="btn btn--primario btn--ancho btn--block-xs btn--inline-md" onclick="pasos.activar(2); gtag('event', 'Simulador', {'event_category':'Edad','event_label': 'Siguiente'});">Siguiente</button>
+								</div>
+							</div>
+							<div class="pasos__contenedor" style="display:none">
+								<!--<h4 class="pasos__titulo">¿Cuales son tus ahorros actuales?</h4>
+								<div class="separador"></div>
+								<img class="personaje" src="img/chancho.svg" alt="Chancho">
+								<div class="separador"></div>-->
+								<div class="preguntas preguntas--validar form" id="preguntas">
+									<h4>¿Cuáles son tus ahorros actuales?</h4>
+									<div class="preguntas__item">
+										<div class="form__grupo xs-text-center">
+											<div class="row middle-xs">
+												<div class="col-xs-12 col-md-8 xs-text-center md-text-right">
+													<label for="ahorrado">*En mi cuenta obligatoria (AFP) tengo ahorrado:</label>
+												</div>
+												<div class="col-xs-10 col-md-3">
+													<div class="form__input">
+														<span class="tooltip" data-tippy-placement="right" data-tippy-arrow="true" data-tippy-content="La cuenta obligatoria es donde se deposita el 10% de tu renta bruta, que por ley se debe descontar a todo trabajador dependiente.">?</span>
+														<input type="text" class="text requerido tipo_numerico" id="ahorrado" name="ahorrado" maxlength="13" placeholder="$0">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="preguntas__item">
+										<div class="form__grupo xs-text-center" data-comentario="">
+											<div class="row middle-xs">
+												<div class="col-xs-12 col-md-8 xs-text-center md-text-right">
+													<label for="ahorrado-apv">En mi Ahorro Previsional Voluntario (APV) tengo ahorrado:</label>
+												</div>
+												<div class="col-xs-10 col-md-3">
+													<div class="form__input">
+														<span class="tooltip" data-tippy-placement="right" data-tippy-arrow="true" data-tippy-content="El APV es un ahorro voluntario adicional al que realizas en tu AFP. Además de aumentar tu jubilación, ofrece incentivos tributarios.">?</span>
+														<input type="text" class="text tipo_numerico" id="ahorrado-apv" name="ahorrado-apv" maxlength="13" placeholder="$0">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="preguntas__item">
+										<div class="form__grupo xs-text-center">
+											<div class="row middle-xs">
+												<div class="col-xs-12 col-md-8 xs-text-center md-text-right">
+													<label for="renta-bruta">Mi renta bruta actual es:</label>
+												</div>
+												<div class="col-xs-10 col-md-3">
+													<div class="form__input">
+														<span class="tooltip" data-tippy-placement="right" data-tippy-arrow="true" data-tippy-content="La renta bruta es tu renta antes de realizar todos los descuentos legales (impuesto, AFP, salud y seguridad social)">?</span>
+														<input type="text" class="text tipo_numerico" id="renta-bruta" name="renta-bruta" maxlength="13" placeholder="$0">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="separador"></div>
+									<div class="separador"></div>
+									<h4>¿Cuánto piensas invertir en el futuro?</h4>
+									<div class="preguntas__item">
+										<div class="form__grupo xs-text-center">
+											<label for="ahorrado-dc">Realizaré Depósitos Convenidos anuales de:</label>
+											<div class="form__input">
+												<input type="text" class="text tipo_numerico" id="ahorrado-dc" name="ahorrado-dc" maxlength="13" placeholder="$0">
+											</div>
+										</div>
+									</div>
+									<div class="preguntas__item">
+										<div class="form__grupo xs-text-center" maxlength="13">
+											<label for="monto-ahorrar">*Invertiré mensualmente en Ahorro Previsional Voluntario (APV):</label>
+											<div class="form__input">
+												<input type="text" class="text requerido tipo_numerico" id="monto-ahorrar" name="monto-ahorrar" maxlength="13" placeholder="$0">
+											</div>
+										</div>
+									</div>
+									<div class="separador"></div>
+									<div class="preguntas__item">
+										<div class="form__grupo xs-text-center">
+											<label for="renta-bruta">Mi renta bruta actual es:</label>
+											<div class="form__input">
+											<span class="tooltip tooltip--top" data-tippy-placement="right" data-tippy-arrow="true" data-tippy-content="Renta bruta: La renta bruta es tu renta antes de realizar todos los descuentos legales (impuesto, AFP, salud y seguridad social)">?</span>
+												<input type="text" class="text tipo_numerico" id="renta-bruta" name="renta-bruta" maxlength="13" placeholder="$0">
+											</div>
+										</div>
+									</div> -->
+								</div>
+								<p class="text-xs-center">*Debe completar los campos obligatorios</p>
+								<div class="separador"></div>
+								<div class="btn__grupo flex-xs block-md column-reverse-xs row-md">
+									<a href="../simuladorapv.1.html#" class="btn btn--secundario btn--ancho btn--borde btn--block-xs btn--inline-md" onclick="pasos.activar(1); gtag('event', 'Simulador', {'event_category':'Cantidad-ahorros','event_label': 'Volver'}); return false;">Volver</a>
+									<button class="btn btn--primario btn--ancho btn--block-xs btn--inline-md" onclick="pasos.activar(3); gtag('event', 'Simulador', {'event_category':'Cantidad-ahorros','event_label': 'Siguiente'});" disabled>Siguiente</button>
+								</div>
+
+							</div>
+							<div class="pasos__contenedor" style="display:none">
+								<!--<h4 class="pasos__titulo">¿Cuales son tus ahorros actuales?</h4>
+								<div class="separador"></div>
+								<img class="personaje" src="img/chancho.svg" alt="Chancho">
+								<div class="separador"></div>-->
+								<div class="preguntas preguntas--validar form" id="preguntas2">
+									<h4>¿Cuánto quieres ahorrar adicional a lo que realizas mensualmente en tu AFP?</h4>
+									<div class="preguntas__item">
+										<div class="form__grupo xs-text-center">
+											<div class="row middle-xs">
+												<div class="col-xs-12 col-md-8 xs-text-center md-text-right">
+													<label for="monto-ahorrar">*Invertiré mensualmente en Ahorro Previsional Voluntario (APV):</label>
+												</div>
+												<div class="col-xs-10 col-md-3">
+													<div class="form__input">
+														<span class="tooltip" data-tippy-placement="right" data-tippy-arrow="true" data-tippy-content="El APV es un ahorro voluntario adicional al que realizas en tu AFP. Además de aumentar tu jubilación, ofrece incentivos tributarios.">?</span>
+														<input type="text" class="text requerido tipo_numerico" id="monto-ahorrar" name="monto-ahorrar" maxlength="13" placeholder="$0">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="alerta alerta--aviso alerta-especial" id="alerta-apv" style="display:none;text-align:left;">
+											<p>Recuerda que para el régimen:</p>
+											<ul class="alerta-especial__list">
+												<li><span>A</span>, el beneficio tributario del 15% de bonificación fiscal anual tiene un tope de 6 UTM.</li>
+												<li><span>B</span>, la rebaja de la base imponible tiene un tope de 50 UF.</li>
+											</ul>
+											<p>Si necesita más información, puedes revisar nuestra sección de <a href="http://apv.larrainvial.com/" class="link-externo" target="_blank">Ahorro Previsional Voluntario</a></p>
+										</div>
+									</div>
+									<div class="preguntas__item">
+										<div class="form__grupo xs-text-center">
+											<div class="row middle-xs">
+												<div class="col-xs-12 col-md-8 xs-text-center md-text-right">
+													<label for="ahorrado-dc">Realizaré Depósitos Convenidos anuales de:</label>
+												</div>
+												<div class="col-xs-10 col-md-3">
+													<div class="form__input">
+														<span class="tooltip" data-tippy-placement="right" data-tippy-arrow="true" data-tippy-content="Los depósitos convenidos son descuentos acordados entre un trabajador y su empleador. Buscan aumentar el capital para financiar una jubilación. No constituyen renta para efectos tributarios, con un tope de 900 UF anuales.">?</span>
+														<input type="text" class="text tipo_numerico" id="ahorrado-dc" name="ahorrado-dc" maxlength="13" placeholder="$0">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="alerta alerta--aviso" id="alerta-uf" style="display:none">
+											Recuerda que el beneficio tributario tiene un tope de 900 UF. Si quieres más información, puedes revisar nuestra sección de <a href="http://apv.larrainvial.com/" class="link-externo" target="_blank">Ahorro Previsional Voluntario</a>.
+										</div>
+									</div>      
+								</div>
+								<p class="text-xs-center">*Debe completar los campos obligatorios</p>
+								<div class="separador"></div>
+								<div class="btn__grupo flex-xs block-md column-reverse-xs row-md">
+									<a href="../simuladorapv.1.html#" class="btn btn--secundario btn--ancho btn--borde btn--block-xs btn--inline-md" onclick="pasos.activar(2); gtag('event', 'Simulador', {'event_category':'Cuanto-ahorro','event_label': 'Volver'}); return false;">Volver</a>
+									<button class="btn btn--primario btn--ancho btn--block-xs btn--inline-md" onclick="pasos.finalizar(); gtag('event', 'Simulador', {'event_category':'Cuanto-ahorro','event_label': 'Siguiente'});" disabled>Siguiente</button>
+								</div>
+
+							</div>
+						</div>
+						<div class="preloader" id="preloader" style="display:none">
+							<img src="img/preloader-2d4d68-48px.gif" alt="Cargando">
+						</div>
+						<div class="respuesta" id="respuesta" style="display:none">
+							
+
+							<div class="respuesta__contenedor-principal">
+								<div class="row">
+									<!-- TOP -->
+									<div class="col-xs-12 col-lg-12">
+										<div class="respuesta__top">
+											<div class="row no-paddings-xs" id="respuesta-positiva">
+												<div class="col-xs-12 col-lg-6">
+													<!-- Respuesta normal -->
+													<div class="respuesta__item respuesta__item--datos respuesta__item--bg" id="escenario-1">
+														<div class="datos">
+															<p class="respuesta__parrafo">Acá puedes ver la diferencia de tu jubilación estimada cuando la complementas con un ahorro en APV.</p>
+															<div class="separador"></div>
+															<img class="respuesta__personaje imagen-respuesta" src="img/respuesta-adulto-m.svg" alt="Imagen respuesta">
+															<p class="respuesta__parrafo">Al ahorrar
+																<span id="monto-ahorro" class="js-monto-ahorro">$0</span>
+																<span>al mes en APV</span>, tu jubilación mensual a los <span class="js-jubilacion-max"></span> años será de
+																<span class="js-total-ahorro">$0</span>
+															</p>
+														</div>
+													</div>
+													<!-- Respuesta positiva -->
+													<div class="respuesta__item respuesta__item--datos respuesta__item--bg" id="escenario-2" style="display:none;">
+														<div class="datos">
+															<p class="respuesta__parrafo">Acá puedes ver la diferencia de tu jubilación estimada cuando la complementas con un ahorro en APV.</p>
+															<div class="separador"></div>
+															<img class="respuesta__personaje imagen-respuesta" src="img/joven-respuesta-positiva-m.svg" alt="Joven respuesta positiva">
+															<p class="respuesta__parrafo">De acuerdo a los ahorros que declaras, sí es posible que te puedas jubilar anticipadamente a los <span class="js-edad-jubilacion"></span> años.</p>
+															<p class="respuesta__parrafo">Al ahorrar
+																<span class="js-monto-ahorro">$0</span>
+																<span>al mes en APV</span>, tu jubilación mensual a los <span class="js-edad-jubilacion"></span> años será de
+																<span class="js-total-ahorro">$0</span>
+															</p>
+														</div>
+													</div>
+													
+
+												</div>
+												<div class="col-xs-12 col-lg-6">
+													<!-- Respuesta normal -->
+													<div class="respuesta__item respuesta__item--grafico respuesta__item--bg">
+														<div class="respuesta__grafico">
+															<div class="respuesta__preloader">
+															<img src="img/preloader-2d4d68-48px.gif" alt="Cargando">
+															</div>
+															<div class="grafico" id="grafico1" style="height: 350px;"></div>
+														</div>
+														<div class="separador"></div>
+														<div class="datos respuesta__links">
+															<div class="respuesta__btns">
+																<a href="../simuladorapv.1.html#" class="btn btn--primario btn--block-xs abrir-form-asesoria" onclick="gtag('event', 'Simulador', {'event_category':'Resultado','event_label': 'Solicitar-asesoria'});">Solicita nuestra asesoría</a>
+																<a class="btn btn--primario btn--borde btn--block-xs btn--inline-md hc" href="https://haztecliente.larrainvial.com/" target="_blank" onclick="tagHazteCliente();">Hazte Cliente</a>
+															</div>															
+															<div class="separador--small"></div>
+															<a href="../simuladorapv.1.html#" class="btn btn--block-xs btn--link btn--ico abrir-form-email" onclick="gtag('event', 'Simulador', {'event_category':'Resultado','event_label': 'Enviar-simulacion'});">Enviar simulación por email
+																<span class="fln-mail"></span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- Respuesta negativa -->
+											<div class="row no-paddings-xs" id="respuesta-negativa" style="display:none">
+												<div class="col-xs-12 col-lg-6">
+													<div class="respuesta__item respuesta__item--datos respuesta__item--bg">
+														<div class="datos">
+															<img class="respuesta__personaje imagen-respuesta" src="img/joven-respuesta-negativa-m.svg" alt="Joven respuesta negativa">
+															<p class="respuesta__parrafo">De acuerdo a los ahorros que declaras, 
+															no es posible que te puedas jubilar anticipadamente a los <span class="js-edad-jubilacion"></span> años.</p>
+															<div class="separador--big oculto-xs block-lg"></div>
+														</div>
+													</div>
+												</div>
+												<div class="col-xs-12 col-lg-6">
+													<div class="respuesta__item respuesta__item--grafico respuesta__item--bg respuesta__item--negativa">
+														<div class="respuesta__no-jubilarse no-jubilarse">
+															<p class="no-jubilarse__titulo">Para jubilarse anticipadamente debes cumplir con los siguientes requisitos:</p>
+															<div class="separador--small"></div>
+															<ul class="no-jubilarse__lista">
+																<li>El monto de tu jubilación debe ser igual o superior al 80% de la jubilación máxima con aporte solidario.</li>
+																<li>El monto de tu jubilación sea igual o superior al 70% de tu promedio de ingresos de los últimos 10 años.</li>
+															</ul>
+															<p class="no-jubilarse__titulo">Calcula nuevamente tu estimación de jubilación aumentando tu ahorro mensual en APV o 
+															modificando la edad de tu jubilación anticipada.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- BOTTOM -->
+									<div class="col-xs-12 col-lg-12">
+										<div class="row no-paddings-xs">
+											<div class="col-xs-12 aumento-apv">
+												<div class="respuesta__item respuesta__item--recalcular">
+													<div class="separador"></div>
+													<h4 class="respuesta__titulo">¿Cómo cambia mi jubilación si aumento mi APV mensual?</h4>
+													<div class="separador--small"></div>
+													<div class="respuesta__cambiar-apv">
+														<div class="form__grupo">
+															<div class="form__input">
+																<!-- <span class="signo">$</span> -->
+																<input type="text" class="text tipo_numerico" id="cambiar-apv-mensual">
+															</div>
+														</div>
+														<div class="recalcular recalcular--desk">
+															<a href="../simuladorapv.1.html#" class="btn btn--primario btn--borde" id="btn-cambiar-apv" onclick="gtag('event', 'Simulador', {'event_category':'Resultado','event_label': 'Recalcular'});">Recalcular</a>
+														</div>
+													</div>
+													<div id="alerta-recalcular" class="alerta alerta--aviso" style="display:none;">Debe ingresar un valor mayor a 0 para recalcular su jubilación.</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-lg-6 edad-pension-apv" style="display:none">
+												<div class="respuesta__item respuesta__item--jubilacion">
+													<div class="separador--small"></div>
+													<h4 class="respuesta__titulo">¿Cómo cambia mi simulación si adelanto mi edad de jubilación?</h4>
+													<div class="slider slider--respuesta slider--edad-pension" data-id="edad-pension" data-max="65" data-min="41" data-inicial="65">
+														<div class="slider__item"></div>
+														<input type="text" class="valor-slider required" value="">
+														<!-- <span class="rango-slider">65</span> -->
+													</div>
+													<div class="recalcular recalcular--mov">
+														<a href="../simuladorapv.1.html#" class="btn btn--primario btn--borde" id="btn-cambiar-apv" onclick="gtag('event', 'Simulador', {'event_category':'Resultado','event_label': 'Recalcular'});">Recalcular</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-lg-12">
+										<div class="separador--big"></div>
+										<!-- <div class="recalcular">
+											<a href="#" class="btn btn--primario btn--borde btn--big" id="btn-cambiar-apv" onclick="gtag('event', 'Simulador', {'event_category':'Resultado','event_label': 'Recalcular'});">Recalcular</a>
+										</div> -->
+									</div>
+								</div>
+							</div>
+
+							<!-- Supuestos + volver al inicio -->
+							<div class="row">
+								<div class="col-xs-12 col-lg-12">
+									<div class="separador"></div>
+									<div class="supuestos">
+										<h5 class="supuestos__titulo">Conoce los supuestos de esta estimación</h5>
+										<div class="supuestos__contenido contenido-dinamico xs-text-left" style="display:none">
+											<ul>
+												<li>Esta simulación fue realizada el 26/11/2024.</li> 
+												<li>Este documento solo es una simulación preparada en base a los supuestos mencionados a continuación y a la información proporcionada por el cliente. Por lo anterior, en ningún caso garantiza o asegura la obtención de una determinada jubilación, ni los fondos que estarán disponibles para ello.</li>
+												<li>Se asume un trabajador dependiente, por lo que no hay restricción en los Depósitos Convenidos. </li>
+												<li>La declaración de aporte de Depósito Convenido se considera cómo un aporte anual.</li>
+												<li>Edad de jubilación:
+													<ul>
+														<li>Mujeres: 60 años.</li>
+														<li>Hombres: 65 años.</li>
+													</ul>
+												</li>
+												<li>Cónyuge dos años menor.</li>
+												<li>La rentabilidad para el cálculo es la siguiente:
+													<ul>
+														<li>Cotización obligatoria: 4,04%</li>
+														<li>Cotización voluntaria (APV): 4,04%</li>
+														
+													</ul>
+													<p style="margin-bottom:0;font-size:1em;color:#555;line-height:1.2;">Esta rentabilidad corresponde a retornos simulados para un horizonte de 
+													40 años, Fondo C. Superintendencia de Pensiones.</p>
+												</li>
+												<li>Tope imponible UF 84,3.</li>
+												<li>Se considera el valor de la UF del día actual cómo referencia. </li>
+												<li>Según el Reglamento DL N° 3.500, para poder acceder a la jubilación anticipada se debe cumplir con los siguientes requisitos.
+													<ul>
+														<li>El monto de tu jubilación debe ser igual o superior al 80% de la jubilación máxima con aporte solidario, vigente a la fecha de tu solicitud.</li>
+														<li>El monto de tu jubilación sea igual o superior al 70% de tu promedio de ingresos de los últimos 10 años.</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="separador"></div>
+									<div class="respuesta__pie">
+										<a href="../simuladorapv.1.html#" class="btn btn--primario btn--borde btn--block-xs btn--inline-md volver" onclick="location.reload(); gtag('event', 'Simulador', {'event_category':'Resultado','event_label': 'Volver-al-inicio'}); return false;">Volver al inicio</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="separador--big"></div>
+						<div class="formularios xs-text-left" id="contenedor-formularios">
+							<div class="formularios__item formularios__item--email" style="display:none">
+								<div class="respuesta-form" id="respuesta-contacto-email">
+									<div class="respuesta-form__item respuesta-form__item--preloader xs-text-center" style="display:none">
+										<img src="img/preloader-2d4d68-48px.gif" alt="Cargando">
+									</div>
+									<div class="respuesta-form__item respuesta-form__item--exito xs-text-center" style="display:none">
+										<span class="respuesta-form__icono fln-alerta-exito-light"></span>
+										<h3 class="respuesta-form__titulo">Se ha enviado el mail.</h3>
+										<p class="respuesta-form__parrafo">Hemos enviado el resultado de la simulación a tu mail.</p>
+										<div class="separador"></div>
+										<div class="btn__grupo">
+											<a href="../simuladorapv.1.html#" class="btn reenviar-mail" onclick="gtag('event', 'Simulador', {'event_category':'Enviar-simulacion','event_label': 'Reenviar-mail'});">Volver a enviar</a>
+											<a href="../simuladorapv.1.html" class="btn btn--secundario" onclick="gtag('event', 'Simulador', {'event_category':'Enviar-simulacion','event_label': 'Ir-al-inicio'});">Ir al inicio</a>
+										</div>
+									</div>
+									<div class="respuesta-form__item respuesta-form__item--error xs-text-center" style="display:none">
+										<span class="respuesta-form__icono fln-alerta-error-light"></span>
+										<h3 class="respuesta-form__titulo">No se pudo enviar el mail</h3>
+										<p class="respuesta-form__parrafo">Ha ocurrido un error inesperado, por favor inténtalo nuevamente.</p>
+										<div class="separador"></div>
+										<a href="../simuladorapv.1.html" class="btn btn--secundario btn-reintentar" onclick="gtag('event', 'Simulador', {'event_category':'Enviar-simulacion','event_label': 'Reintentar'}); ">Reintentar</a>
+									</div>
+								</div>
+								<form class="form form-contacto" action="../simuladorapv.1.html" id="contacto-email">
+									<div class="row">
+										<div class="col-xs-12 col-lg-12">
+											<h3 class="form-contacto__titulo">Enviar resultado de simulación por email.</h3>
+											<div class="row">
+												<div class="col-xs-12 col-lg-6">
+													<div class="form__grupo form__grupo--animado">
+														<label for="nombre">Nombre y Apellido</label>
+														<div class="form__input">
+															<input type="text" class="text tipo_nombre requerido" id="nombre" name="nombre">
+														</div>
+													</div>
+												</div>
+												<div class="col-xs-12 col-lg-6">
+													<div class="form__grupo form__grupo--animado">
+														<label for="email">Email</label>
+														<div class="form__input">
+															<input type="text" class="text tipo_email requerido" id="email" name="email">
+															<input type="text" id="resultado_conAPV" name="resultado_conAPV" style="display:none">
+															<input type="text" id="resultado_sinAPV" name="resultado_sinAPV" style="display:none">
+															<input type="text" id="resultado_deposito" name="resultado_sexo" style="display:none">
+															<input type="text" id="resultado_sexo" name="resultado_sexo" style="display:none">
+														</div>
+													</div>
+												</div>												
+											</div>
+										</div>
+										<div class="col-xs-12 col-lg-4">
+											<div class="g-recaptcha captcha" id="captcha" data-callback="recaptchaCallback" data-sitekey="6LdDdmceAAAAAParljYtgFJTzsAX3pd9LcwUbbil">
+											</div>
+										</div>
+										<div class="col-xs-12 col-lg-8 xs-text-right">
+											<div class="alerta alerta--error" id="errores_contacto-email" style="display:none"></div>
+											<p class="small">*Todos los campos son obligatorios</p>
+											<div class="separador--small"></div>
+											<div class="btn__grupo  form__enviar" style="display: inline-block;">
+												<a href="../simuladorapv.1.html#" class="btn btn--primario" onclick="enviarMail(); gtag('event', 'Simulador', {'event_category':'Enviar-simulacion','event_label': 'enviar'}); return false;">Enviar</a>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="formularios__item formularios__item--asesoria" style="display:none">
+								<div class="respuesta-form" id="respuesta-contacto-asesor">
+									<div class="respuesta-form__item respuesta-form__item--preloader xs-text-center" style="display:none">
+										<img src="img/preloader-2d4d68-48px.gif" alt="Cargando">
+									</div>
+									<div class="respuesta-form__item respuesta-form__item--exito xs-text-center" style="display:none">
+										<span class="respuesta-form__icono fln-alerta-exito-light"></span>
+										<h3 class="respuesta-form__titulo">Datos enviados con éxito</h3>
+										<p class="respuesta-form__parrafo">En breve un asesor se pondrá en contacto contigo.</p>
+										<div class="separador"></div>
+										<a href="../simuladorapv.1.html" class="btn btn--secundario" onclick="location.reload(); gtag('event', 'Simulador', {'event_category':'Solicitar-asesoria','event_label': 'Ir-al-inicio'}); return false;">Ir al inicio</a>
+									</div>
+									<div class="respuesta-form__item respuesta-form__item--error xs-text-center" style="display:none">
+										<span class="respuesta-form__icono fln-alerta-error-light"></span>
+										<h3 class="respuesta-form__titulo">No se pudieron enviar tus datos</h3>
+										<p class="respuesta-form__parrafo">Ha ocurrido un error inesperado, por favor inténtalo nuevamente.</p>
+										<div class="separador"></div>
+										<a href="../simuladorapv.1.html" class="btn btn--secundario btn-reintentar" onclick="gtag('event', 'Simulador', {'event_category':'Solicitar-asesoria','event_label': 'Reintentar'}); ">Reintentar</a>
+									</div>
+								</div>
+						
+								<div class="separador--big"></div>
+								<form class="form form-contacto" action="../simuladorapv.1.html" id="contacto-asesor">
+									<h3 class="form-contacto__titulo">Contactar a un asesor</h3>
+									<div class="row">
+										<input type="text" id="sexo-usuario" name="sexo-usuario" hidden>
+										<input type="text" id="edad-usuario" name="edad-usuario" value="18" hidden>
+										<input type="text" id="ahorrado-usuario" name="ahorrado-usuario" value="0" hidden>
+										<input type="text" id="renta-bruta-usuario" name="renta-bruta-usuario" value="0" hidden>
+										<input type="text" id="ahorrado-dc-usuario" name="ahorrado-dc-usuario" value="0" hidden>
+										<input type="text" id="ahorrado-apv-usuario" name="ahorrado-apv-usuario" value="0" hidden>
+										<input type="text" id="monto-ahorrar-usuario" name="monto-ahorrar-usuario" value="0" hidden>
+										<input type="text" id="conAPV" name="conAPV" value="0" hidden>
+										<input type="text" id="sinAPV" name="sinAPV" value="0" hidden>
+										<input type="hidden" id="jubilacion-apto" name="jubilacion-apto" value="0">
+										<div class="col-xs-12 col-lg-6">
+											<div class="separador--small"></div>
+											<div class="form__grupo form__grupo--animado">
+												<label for="nombre">Nombre completo</label>
+												<div class="form__input">
+													<input type="text" class="text requerido tipo_nombre" id="nombre" name="nombre">
+												</div>
+											</div>
+											<div class="form__grupo form__grupo--animado">
+												<label for="rut">RUT</label>
+												<div class="form__input">
+													<input type="text" class="text requerido tipo_rut"  id="rut" name="rut">
+												</div>
+											</div>
+											<div class="form__grupo form__grupo--animado">
+												<label for="telefono">Teléfono</label>
+												<div class="form__input">
+													<input type="text" class="text requerido tipo_telefono" id="telefono" name="telefono">
+												</div>
+											</div>
+											<div class="form__grupo form__grupo--animado">
+												<label for="email-asesor">Email</label>
+												<div class="form__input">
+													<input type="text" class="text tipo_email requerido" id="email-asesor" name="email-asesor">
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-lg-6">
+											<!-- <div class="form__grupo form__grupo--alineado">
+												<div class="separador--small separador--movil"></div>
+												<div class="separador--small"></div>
+												<label for="motivo-contacto" class="activo" hidden>Motivo de contacto</label>
+												<div class="form__input">
+													<select class="select" name="motivo-contacto" id="motivo-contacto">
+														<option value="estimacion-de-pension" selected hidden>Estimación de jubilación</option>
+														<option value="estimacion-de-pension">Estimación de jubilación</option>
+													</select>
+													<span class="icono fln-abajo"></span>
+												</div>
+											</div> -->
+											<div class="form__grupo form__grupo--animado form__grupo--textarea">
+												<label for="mensaje" class="no-before">Mensaje</label>
+												<div class="form__input">
+													<textarea name="mensaje" id="mensaje" cols="30" rows="6" maxlength="10000"></textarea>
+												</div>
+											</div>
+											<div class="form__grupo captcha">
+												<div class="caja_input">
+													<div class="g-recaptcha captcha" data-callback="recaptchaCallback" data-sitekey="6LdDdmceAAAAAParljYtgFJTzsAX3pd9LcwUbbil" id="captcha2"></div>
+																									</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-lg-12">
+											<div class="alerta alerta--error" id="errores_contacto-asesor" style="display:none"></div>
+											<div class="row">
+												<div class="col-xs-12 col-lg-6 col-lg-offset-6">
+													<div class="separador"></div>
+													<div class="btn__grupo xs-text-right form__enviar">
+														<p class="small">*Todos los campos son obligatorios</p>
+														<a href="../simuladorapv.1.html#" class="btn btn--primario" onclick="solicitarAsesoria(); gtag('event', 'Simulador', {'event_category':'Solicitar-asesoria','event_label': 'Enviar'}); return false;">Enviar</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<div class="separador"></div>
+	</main>
+
+	<!-- <div class="lightbox lightbox--hidden">
+		<div class="lightbox__contenedor">
+			<div class="lightbox__bg cerrar-lightbox"></div>
+			<div class="lightbox__bloque">
+				<div class="lightbox__item lightbox__item--medium lightbox--hidden animated bounceIn go" id="lightbox-email">
+					<span class="lightbox__cerrar fln-cerrar cerrar-lightbox"></span>
+				</div>
+				<div class="lightbox__item lightbox__item--medium lightbox--hidden animated bounceIn go" id="lightbox-asesor">
+					<span class="lightbox__cerrar fln-cerrar cerrar-lightbox"></span>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="preloader-general" id="preloader-general" style="display:none"></div>
+
+	<div class="alerta-navegador" style="display:none">
+		<span class="alerta-navegador__cerrar fln-cerrar"></span>
+		<h5 class="alerta-navegador__titulo">Navegador desactualizado :(</h5>
+		<p class="alerta-navegador__parrafo">Para una mejor experiencia en el sitio, te recomendamos actualizar tu navegador a la última versión. Puedes ver las últimas
+			versiones de los navegadores actuales
+			<a href="https://browsehappy.com/?locale=es" target="_blank" onclick="gtag('event', 'Simulador', {'event_category':'Navegador-desactualizado','event_label': 'alerta-navegador-desactualizado'});">aquí</a>
+		</p>
+	</div>
+</body>
+<script>
+	var _captcha = document.getElementById('captcha');
+	var _captcha2 = document.getElementById('captcha2');
+	var onloadCallback = function() {
+		if (_captcha) {
+			grecaptcha.render(_captcha, {
+			'sitekey': '6LdDdmceAAAAAParljYtgFJTzsAX3pd9LcwUbbil',
+			'callback': recaptchaCallback,
+			})
+		}
+		if (_captcha2) {
+			grecaptcha.render(_captcha2, {
+			'sitekey': '6LdDdmceAAAAAParljYtgFJTzsAX3pd9LcwUbbil',
+			'callback': recaptchaCallback,
+			})
+		}
+	}
+</script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+</html>
